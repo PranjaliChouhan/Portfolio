@@ -24,7 +24,7 @@ export const Footer = () => {
               
             </div>
             <p>Expecto Code-tronum!</p>
-            <p>  Dumblecode("Developers and the Chamber of Code"):<br/> We've all got both bugs and features inside us. <br/>The true coder is the one who learns to harness both.</p>
+            <p>  Dumblecode("Developers and the Chamber of Code"):<br/> We've all got both bugs and features inside . <br/>The true coder is the one who learns to harness both.</p>
           </Col>
         </Row>
       </Container>

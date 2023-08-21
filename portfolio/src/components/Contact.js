@@ -25,7 +25,7 @@ export const Contact = () => {
       })
   }
 
-  const handleSubmit = async (e) => {
+   {/*const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
     let response = await fetch("http://localhost:5000/contact", {
@@ -43,9 +43,9 @@ export const Contact = () => {
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
-  };
+  };*/}
 
-  {/*const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
     
@@ -75,7 +75,7 @@ export const Contact = () => {
       setStatus({ success: false, message: 'Something went wrong, please try again later.' });
     });
   };
-*/}
+
   return (
     <section className="contact" id="connect">
       <Container>
