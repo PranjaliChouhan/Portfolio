@@ -12,6 +12,12 @@ import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
 import projImg11 from "../assets/img/project-img11.png";
 import projImg12 from "../assets/img/project-img12.png";
+import projImg13 from "../assets/img/project-img13.png";
+import projImg14 from "../assets/img/project-img14.png";
+import projImg15 from "../assets/img/project-img15.png";
+import projImg16 from "../assets/img/project-img16.png";
+import projImg17 from "../assets/img/project-img17.png";
+import projImg18 from "../assets/img/project-img18.png";
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -35,7 +41,7 @@ export const Projects = () => {
       title: "CulinaryCanvas",
       description: "share-recipe",
       imgUrl: projImg3,
-      vercelUrl:""
+      vercelUrl:"https://64e32c23c3249769512badbf--poetic-sawine-dee7e8.netlify.app/"
     },
     {
       title: "Accordian",
@@ -94,6 +100,44 @@ export const Projects = () => {
       vercelUrl:"https://drumkit-sigma-nine.vercel.app/"
     },
   ];
+  const projects3 = [
+    {
+      title: "Quiz",
+      description: "test-gk",
+      imgUrl: projImg13,
+      vercelUrl:"https://drumkit-e1ep.vercel.app/"
+    },
+    {
+      title: "side-bar",
+      description: "nested-items",
+      imgUrl: projImg14,
+      vercelUrl:"https://side-bar-phi.vercel.app/"
+    },
+    {
+      title: "TinDog",
+      description: "site-for-dogs",
+      imgUrl: projImg15,
+      vercelUrl:"https://tindog-five-eosin.vercel.app/"
+    },
+    {
+      title: "Simon-game",
+      description: "let's-Play",
+      imgUrl: projImg16,
+      vercelUrl:"https://simon-game-three-xi.vercel.app/"
+    },
+    {
+      title: "Regitration-form",
+      description: " register-people",
+      imgUrl: projImg17,
+      vercelUrl:"https://form-beta-mauve.vercel.app/"
+    },
+    {
+      title: "password-strength-check",
+      description: "check-password",
+      imgUrl: projImg18,
+      vercelUrl:"https://password-strength-checker-git-main-pranjalichouhan.vercel.app/"
+    },
+  ];
 
   return (
     <section className="project" id="project">
@@ -120,16 +164,7 @@ export const Projects = () => {
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                     
-                        {/*
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        */} 
+                        
                         <Row>
                    {
                 projects.map((project, index) => {
@@ -163,7 +198,20 @@ export const Projects = () => {
             </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Witness my wizardry come to life as you explore these enchanting projects, and when you're ready to join forces on your own digital ventures, let's connect through the magic of email.</p>
+                    <Row>
+                   {
+                projects3.map((project, index) => {
+                  return (
+                    <ProjectCard
+                      key={index}
+                      title={<a href={project.vercelUrl} target="_blank" rel="noopener noreferrer">{project.title}</a>}
+                      description={project.description}
+                      imgUrl={project.imgUrl}
+                    />
+                  )
+                })
+              }
+            </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
