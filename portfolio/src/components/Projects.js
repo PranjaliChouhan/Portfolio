@@ -85,7 +85,7 @@ export const Projects = () => {
       title: "Student-query-registration",
       description: "query-asking-platform",
       imgUrl: projImg10,
-      vercelUrl:"https://accordian-wine.vercel.app/"
+      vercelUrl:"https://student-management-system-self.vercel.app/"
     },
     {
       title: "e-commerce-website",
